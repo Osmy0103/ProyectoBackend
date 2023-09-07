@@ -1,0 +1,409 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+
+  background: linear-gradient(#8e9eab, #eef2f3
+  );
+    color: white;
+
+
+    font-family: 'Kite One', sans-serif;
+
+  
+
+}
+
+.cajalogin{
+    display: flex;
+    background-color:#696969;
+    height: 400px;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.cajaregis{
+    display: flex;
+    background-color:#696969;
+    height: 400px;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .log{
+    width: 200px;
+    height: 150px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: spin 5s linear infinite;
+  }
+  
+  .log:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: none;
+  }
+
+  
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.especial{
+  font-size: 50px;
+  margin-right: 250px;
+}
+.haz{
+  font-size: 50px;
+  margin-right: 250px;
+}
+
+.navegador{
+  margin: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    font-size: 18px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: stretch;
+   width: 100%;
+    height: 300px;
+    overflow:visible;
+    
+  }
+  
+  .carousel img {
+    max-width: 3000%;
+    height: 300px;
+    background-size: cover ;
+    
+  }
+
+
+
+  
+  
+/* 
+  productos */
+ 
+  
+  .title{
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  
+  .products{
+    display:flex;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  
+  .card-product{
+    flex: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .im{
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+  }
+ 
+
+  
+  .info-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px 30px;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .info-product h3{
+    color: #777;
+    font-weight: 500;
+  }
+  
+  
+  .price{
+    color: #000;
+    font-weight: 700;
+    margin: 15px 0;
+  }
+  
+  .info-product button{
+    background-color:orangered;
+    color: #fff;
+    border-radius: 500px ;
+    display: block;
+    width: 200px;
+    padding: 20px 0;
+    cursor: pointer;
+   
+  }
+
+
+  /* BIENVENIDA */
+
+  .Bientitulo {
+    text-align: center;
+    margin: 40px auto;
+  }
+  
+  .estilo {
+    font-size: 28px;
+    color: #fff;
+    background-color: #ff5733;
+    padding: 20px;
+    border-radius: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation-duration: 2s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+
+  .inicio {
+    text-align: center;
+  }
+  
+ 
+  
+
+  .info{
+    display: flex;
+  }
+  
+  .seccion {
+    margin-top: 50px;
+    padding: 20px;
+  
+     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color:#000 ;
+  }
+  
+  .seccion h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .seccion p {
+    font-size: 16px;
+    color: #333;
+  }
+
+
+
+.letra{
+  color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 200PX;
+}
+
+.como{
+  color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 300PX;
+  margin-top:100px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  margin-top: 54px;
+ border-radius: 40px;
+}
+
+/* Estilos para el contenedor principal */
+.conta {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos para la fila de contenido */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilos para la sección de información */
+.meta {
+  flex-basis: 30%;
+}
+
+.meta h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.meta p {
+  font-size: 16px;
+}
+
+/* Estilos para la sección de redes sociales */
+.sociales {
+  flex-basis: 40%;
+}
+
+.sociales h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-icons li {
+  margin-right: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin-bottom: 10px;
+ 
+
+}
+
+/* Agrega esta regla CSS al final de tu archivo CSS */
+@keyframes moveIcons {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+    transform: translateX(20px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Aplica la animación a la clase .redes */
+.redes {
+  animation: moveIcons 4s infinite ease-in-out;
+  height: 32px;
+  width: 32px;
+}
+
+/* Estilos para la sección de contacto */
+.col-md-4 {
+  flex-basis: 30%;
+}
+
+.col-md-4 h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.col-md-4 p {
+  font-size: 16px;
+}
+
+/* Estilos para el pie de página */
+.bottom-footer {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.bottom-footer p {
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+}
